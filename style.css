@@ -1,0 +1,251 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ .max-width {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: auto;
+}
+.navbar1 {
+    position: fixed;
+    width: 100%;
+    padding: 22px 0;
+    background: #202020;
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid #202020;
+    box-shadow: 2px 2px 2px #000;
+}
+.navbar1 .logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+	margin-left: -20px; 
+}
+.navbar1 .logo a span {
+    color:deepskyblue;
+    text-decoration: none;
+}
+.navbar1 .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar1 .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.navbar1 .menu li a:hover{
+    color: deepskyblue;
+}
+.navbar1 .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home {
+    display: flex;
+    background: #202020 no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+} 
+.home .home-content .text-1{
+    font-size: 35px;
+}
+.home .home-content .text-2 {
+    font-size: 85px;
+    font-weight: 600;
+    margin-left: -3px;  
+}
+.home .home-content .dynamic-text .text-3{
+    color:#fff;
+    font-size: 31px;
+}
+.text-3 .switch-word{
+    display:inline-block;
+    color:deepskyblue;
+    list-style: none;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px;
+}
+.home .home-content .text-3 span{
+    color:deepskyblue;
+    font-weight: 400;
+
+}
+/*.myDetails{
+    background:#202020;
+    font-size:20px;
+    color:#fff;
+    text-decoration:none;
+    font-style: normal;
+}*/
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about{
+	display: flex;
+    background: #202020 no-repeat center;
+    height: 0vh;
+    color: #fff;
+    min-height: 450px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .content h2 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #202020;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.about .content ul strong {
+  margin-right: 10px;
+}
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #202020;
+  line-height: 0;
+}
+.about .content p:last-child {
+  margin-bottom: 0;/* close about*/
+  
+  
+  
+  
+  
+  
+/*.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background:#808080; 
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    background: rgba(255,255,255,0.05);
+    margin: 0px 10px;
+    box-shadow: 0 15px 35px rgba(1,1,1,0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+
+    transition: 1s;
+    border: 1px solid #000000;
+}
+.container .card .member {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    transition: 1s;
+}
+.container .card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 15px 35px rgba(1,1,1,0.3);
+}
+.container .card:hover .member {
+
+    transform: scale(1.05);
+}
+.container .card .member .imgbx{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+.container .card .member .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .member .content h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+.container .card .member .content h3 span {
+    display: flex;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container {
+    width: 90%;
+    padding: 10px;
+    background: #ddd;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 200px;
+    height: 250px;
+    background: #4cff00;
+    margin: 0px 10px;
+    transition: 1s;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+.card:hover{
+    transform:scale(1.15);
+    background:#ff800a;
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+}
+.container .card {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}*/
